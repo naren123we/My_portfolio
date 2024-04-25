@@ -6,7 +6,7 @@ import ProjectCard from "./ProjectCards";
 import the_khabri from "../../Assets/the_khabri.png";
 import Portfolio from "../../Assets/Portfolio.png";
 import my_cart from "../../Assets/my_kart.png";
-
+import real_estate from "../../Assets/real-estate.png";
 import "./project.css";
 
 function Projects() {
@@ -18,6 +18,20 @@ function Projects() {
         </h1>
         <p>Ransforming ideas into executable realities</p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={6} lg={4} className="project-card">
+            <ProjectCard
+              imgPath={real_estate}
+              title="HomeBliss"
+              description="The Real Estate Management System is a sophisticated web application designed to facilitate the management of real 
+              estate properties, catering to the needs of property owners and buyers. Using React.js, components are modularized and organized, 
+              allowing for efficient development, testing, and maintenance of the frontend codebase. Express.js serves as the backend framework,
+               enabling the creation of RESTful API endpoints for handling client requests and interacting with the database. JSON Web Tokens 
+               (JWT) are employed for user authentication, enabling secure access to the application's features and resources."
+              ghLink="https://github.com/naren123we/HomeBliss"
+              demoLink="https://home-bliss.vercel.app/"
+            />
+          </Col>
+
           <Col md={6} lg={4} className="project-card">
             <ProjectCard
               imgPath={my_cart}
@@ -53,8 +67,8 @@ function Projects() {
                achievements in the digital realm. This portfolio website not only delivers stunning visuals but 
                also ensures lightning-fast performance and a delightful user
                experience, making it a standout showcase of modern web development."
-              ghLink="https://github.com/rahuljha4171/Portfolio-Website"
-              demoLink="https://rahuljha.info/"
+              ghLink="https://github.com/naren123we/my_portfolio"
+              demoLink="https://my-portfolio-beta-ten-21.vercel.app/"
             />
           </Col>
         </Row>
